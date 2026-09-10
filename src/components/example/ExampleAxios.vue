@@ -2,6 +2,7 @@
 // 📜 CODE BLOCK - init
 import axios from 'axios';
 import { useAsyncState } from '@vueuse/core';
+import { useQuery, useQueryClient } from '@tanstack/vue-query';
 import type { DogApiResponse } from '@/types/example/api';
 
 // 📜 CODE BLOCK - API fetch
@@ -14,6 +15,17 @@ const {
   const res = await axios.get<DogApiResponse>('https://random.dog/woof.json');
   return res.data.url;
 }, '');
+
+const {
+  isPending: isPendingWoof,
+  isFetching: isFetchingWoof,
+  isError: isErrorFetchWoof,
+  data: dataWoof,
+  error: errorWoof
+} = useQuery({
+  queryKey: ['woof'],
+  queryFn: () => axios.get<DogApiResponse>('https://random.dog/woof.json')
+});
 
 // 📜 CODE BLOCK - rendering
 const isRendering = ref<boolean>(true);

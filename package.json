@@ -37,6 +37,7 @@
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-vue": "^10.7.0",
+    "gh-pages": "^6.3.0",
     "globals": "^17.1.0",
     "jiti": "^2.6.1",
     "prettier": "3.8.1",
