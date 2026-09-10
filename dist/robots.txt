@@ -1,0 +1,5 @@
+# Example - Block all crawlers except AdsBot (AdsBot crawlers must be named explicitly)
+# Ref - https://developers.google.com/crawling/docs/robots-txt/create-robots-txt
+
+# User-agent: *
+# Disallow: /
