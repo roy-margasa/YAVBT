@@ -1,5 +1,5 @@
 <div>
-  <h1>Yet Another Vue 3 Boilerplate Template v0.5.1</h1>
+  <h1>Yet Another Vue 3 Boilerplate Template v0.5.2</h1>
   <div>
     <img alt="repo-size" src="https://img.shields.io/github/repo-size/roy-margasa/YAVBT.svg" />
     <img alt="last-commit" src="https://img.shields.io/github/last-commit/roy-margasa/YAVBT.svg" />
@@ -170,7 +170,8 @@ I use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
 - [x] add Tanstack Query and example how to use it
 - [ ] add a mockup api instead of using availabe public api
 - [ ] fix the mobile view
-- [ ] add responsive example using Tailwindcss
+- [ ] add responsive media query example using Tailwindcss
+- [ ] create plugin folder for easier plugin management
 - [x] able to change head title
 - [x] add github.io page
 - [x] add vee validate
