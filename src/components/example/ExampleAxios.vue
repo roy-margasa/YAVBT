@@ -1,21 +1,11 @@
 <script setup lang="ts">
 // 📜 CODE BLOCK - init
 import axios from 'axios';
-import { useAsyncState } from '@vueuse/core';
-import { useQuery, useQueryClient } from '@tanstack/vue-query';
+import { useQuery } from '@tanstack/vue-query';
 import type { DogApiResponse } from '@/types/example/api';
 
 // 📜 CODE BLOCK - API fetch
-// By default, useAsyncState executes on component mount
-const {
-  state: dogPicture,
-  isLoading: isLoadingDog,
-  error
-} = useAsyncState(async () => {
-  const res = await axios.get<DogApiResponse>('https://random.dog/woof.json');
-  return res.data.url;
-}, '');
-
+// By default, useQuery executes on component mount
 const {
   isPending: isPendingWoof,
   isFetching: isFetchingWoof,
@@ -24,15 +14,19 @@ const {
   error: errorWoof
 } = useQuery({
   queryKey: ['woof'],
-  queryFn: () => axios.get<DogApiResponse>('https://random.dog/woof.json')
+  queryFn: () => axios.get<DogApiResponse>('https://random.dog/woof.json'),
+  select: (res) => res.data.url,
+  refetchOnWindowFocus: true
 });
 
 // 📜 CODE BLOCK - rendering
 const isRendering = ref<boolean>(true);
 
-const isLoadingMedia = computed(() => isLoadingDog.value || isRendering.value);
+const isLoadingMedia = computed(
+  () => isPendingWoof.value || isFetchingWoof.value || isRendering.value
+);
 
-const mediaType = computed(() => utilMediaCheck(dogPicture.value));
+const mediaType = computed(() => utilMediaCheck(dataWoof.value));
 
 function renderingIsDone() {
   isRendering.value = false;
@@ -41,7 +35,7 @@ function renderingIsDone() {
 
 <template>
   <div class="border border-gray-200 p-4 rounded-lg flex flex-col items-center basis-xs">
-    <h3 class="border-b pb-1 mb-4">Axios + useAsyncState</h3>
+    <h3 class="border-b pb-1 mb-4">Axios + Tanstack Query</h3>
     <div class="w-full flex flex-col items-center">
       <div v-if="isLoadingMedia" class="w-full animate-pulse">
         <div class="w-full block h-30 bg-gray-300"></div>
@@ -50,7 +44,7 @@ function renderingIsDone() {
         v-if="mediaType === 'image'"
         v-show="!isLoadingMedia"
         @load="renderingIsDone"
-        :src="dogPicture"
+        :src="dataWoof"
         alt="Random dog"
         class="h-40"
       />
@@ -58,14 +52,15 @@ function renderingIsDone() {
         v-else-if="mediaType === 'video'"
         v-show="!isLoadingMedia"
         @loadeddata="renderingIsDone"
-        :src="dogPicture"
+        :src="dataWoof"
         controls
         class="h-40"
         autoplay
       />
-      <p v-if="error" class="text-red-500">
-        {{ (error as Error).message }}
+      <p v-if="isErrorFetchWoof" class="text-xs mt-1 text-red-500">
+        {{ errorWoof?.message }}
       </p>
+      <p v-if="mediaType" class="text-xs mt-1">type: {{ mediaType }}</p>
     </div>
   </div>
 </template>
