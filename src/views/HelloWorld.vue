@@ -26,7 +26,7 @@ useDefaultHead({
       >Boilerplate and Examples</router-link
     >
     <router-link
-      to="https://github.com/freestyler-rmg/YAVBT"
+      to="https://github.com/roy-margasa/YAVBT"
       target="_blank"
       rel="noopener noreferrer"
       class="mt-4 px-4 py-2 border border-blue-500 rounded text-white"
