@@ -166,10 +166,12 @@ I use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
 - [ ] create a script to 'reset' this template
 - [ ] sfc example with defineModel
 - [ ] test unit
-- [ ] fix 404 when refreshed from boilerplate-example page
+- [x] fix 404 when refreshed from boilerplate-example page
 - [ ] add link to the source on each example
 - [ ] add Tanstack Query and example how to use it
 - [ ] add a mockup api instead of using availabe public api
+- [ ] fix the mobile view
+- [ ] add responsive example using Tailwindcss
 - [x] able to change head title
 - [x] add github.io page
 - [x] add vee validate
