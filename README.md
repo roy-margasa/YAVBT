@@ -1,8 +1,8 @@
 <div>
-  <h1>Yet Another Vue 3 Boilerplate Template v0.5.1</h1>
+  <h1>Yet Another Vue 3 Boilerplate Template v0.5.2</h1>
   <div>
-    <img alt="repo-size" src="https://img.shields.io/github/repo-size/freestyler-rmg/YAVBT.svg" />
-    <img alt="last-commit" src="https://img.shields.io/github/last-commit/freestyler-rmg/YAVBT.svg" />
+    <img alt="repo-size" src="https://img.shields.io/github/repo-size/roy-margasa/YAVBT.svg" />
+    <img alt="last-commit" src="https://img.shields.io/github/last-commit/roy-margasa/YAVBT.svg" />
   </div>
   <br />
 </div>
@@ -43,14 +43,13 @@ So every time I forget how to use certain Vue features or libraries, I can go ba
 
 ## 🔝 Top 8 VueUse composables
 
-- ~~[`useAsyncState`](https://vueuse.org/core/useAsyncState/#useasyncstate) - Simplifying try...catch~~ This will be replaced by Tanstack Query
-- [`useEventListener`](https://vueuse.org/core/useEventListener/) - Automatically remove event listener on unmounted
+- [`onClickOutside`](https://vueuse.org/core/onClickOutside/) - Very useful for dropdown or modal
 - [`useClipboard`](https://vueuse.org/core/useClipboard/#useclipboard) - Reactive Clipboard API
 - [`useDateFormat`](https://vueuse.org/shared/useDateFormat/#usedateformat) - simple date formatting
 - [`useDebounceFn`](https://vueuse.org/shared/useDebounceFn/#usedebouncefn) - Debounce execution of a function for preventing repeat execution on repeat clicks
+- [`useEventListener`](https://vueuse.org/core/useEventListener/) - Automatically remove event listener on unmounted
 - [`useLocalStorage`](https://vueuse.org/core/useLocalStorage/#uselocalstorage) - Reactive localStorage
 - [`useMediaQuery`](https://vueuse.org/core/useMediaQuery/#usemediaquery) - Reactive media query
-- [`onClickOutside`](https://vueuse.org/core/onClickOutside/) - Very useful for dropdown or modal
 - [`useTimeoutFn`](https://vueuse.org/shared/useTimeoutFn/#usetimeoutfn) - Auto clean up timeout
 
 ## 📂 Project Structure
@@ -166,10 +165,13 @@ I use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
 - [ ] create a script to 'reset' this template
 - [ ] sfc example with defineModel
 - [ ] test unit
-- [ ] fix 404 when refreshed from boilerplate-example page
+- [x] fix 404 when refreshed from boilerplate-example page
 - [ ] add link to the source on each example
-- [ ] add Tanstack Query and example how to use it
+- [x] add Tanstack Query and example how to use it
 - [ ] add a mockup api instead of using availabe public api
+- [ ] fix the mobile view
+- [ ] add responsive media query example using Tailwindcss
+- [ ] create plugin folder for easier plugin management
 - [x] able to change head title
 - [x] add github.io page
 - [x] add vee validate

@@ -17,7 +17,7 @@ useDefaultHead({
   <div
     class="flex flex-col justify-center items-center min-h-screen bg-linear-to-r from-gray-950 to-blue-600 p-3"
   >
-    <simple-prop msg="YAVBT v0.5.0" />
+    <simple-prop msg="YAVBT v0.5.3" />
     <simple-named-slot class="text-center">
       {{ quoteStore.quote }}
       <template v-slot:subtitle>{{ quoteStore.author }}</template>
@@ -26,7 +26,7 @@ useDefaultHead({
       >Boilerplate and Examples</router-link
     >
     <router-link
-      to="https://github.com/freestyler-rmg/YAVBT"
+      to="https://github.com/roy-margasa/YAVBT"
       target="_blank"
       rel="noopener noreferrer"
       class="mt-4 px-4 py-2 border border-blue-500 rounded text-white"
