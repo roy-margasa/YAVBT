@@ -46,10 +46,5 @@
     "unplugin-auto-import": "^21.0.0",
     "vite": "npm:rolldown-vite@7.2.5",
     "vue-tsc": "^3.1.4"
-  },
-  "pnpm": {
-    "overrides": {
-      "vite": "npm:rolldown-vite@7.2.5"
-    }
   }
 }
