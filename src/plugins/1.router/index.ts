@@ -10,6 +10,9 @@ const router = createRouter({
   routes
 });
 
+// This is useful on a non Vue file
+export { router };
+
 export default function (app: App) {
   app.use(router);
 }
