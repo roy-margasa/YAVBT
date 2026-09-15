@@ -1,4 +1,5 @@
 import { createHead } from '@unhead/vue/client';
+import { DEFAULT_PAGE_DESCRIPTION } from '@/config/site';
 import type { App } from 'vue';
 
 const head = createHead();
@@ -7,7 +8,7 @@ head.push({
   meta: [
     {
       name: 'description',
-      content: 'Default site description here'
+      content: DEFAULT_PAGE_DESCRIPTION
     }
   ]
 });

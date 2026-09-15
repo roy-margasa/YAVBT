@@ -1,9 +1,10 @@
+import { SITE_NAME, DEFAULT_PAGE_TITLE } from '@/config/site';
 import type { Router, RouteLocationNormalized } from 'vue-router';
 
 export const setupGuards = (router: Router) => {
   router.beforeEach((to: RouteLocationNormalized) => {
-    const siteName = to.meta.siteName ?? 'Default site name here';
+    const title = to.meta.title ?? DEFAULT_PAGE_TITLE;
 
-    document.title = `${siteName} | YAVBT`;
+    document.title = `${title} | ${SITE_NAME}`;
   });
 };

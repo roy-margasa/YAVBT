@@ -7,7 +7,7 @@ export const example = [
     name: 'HelloWorld',
     component: HelloWorld,
     meta: {
-      siteName: 'Hello World!'
+      title: 'Hello World!'
     }
   },
   {
@@ -15,7 +15,7 @@ export const example = [
     name: 'BoilerplateExamples',
     component: Boilerplate,
     meta: {
-      siteName: 'Boilerplate Examples'
+      title: 'Boilerplate Examples'
     }
   }
 ];
