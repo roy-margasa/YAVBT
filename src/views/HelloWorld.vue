@@ -30,8 +30,8 @@ useHead({
     <router-link to="/boilerplate-examples" class="mt-8 bg-gray-50 px-4 py-2 text-blue-500 rounded"
       >Boilerplate and Examples</router-link
     >
-    <router-link
-      to="https://github.com/roy-margasa/YAVBT"
+    <a
+      href="https://github.com/roy-margasa/YAVBT"
       target="_blank"
       rel="noopener noreferrer"
       class="mt-4 px-4 py-2 border border-blue-500 rounded text-white"
@@ -51,6 +51,6 @@ useHead({
         </svg>
         View on GitHub
       </div>
-    </router-link>
+    </a>
   </div>
 </template>

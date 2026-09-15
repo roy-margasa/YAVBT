@@ -159,7 +159,7 @@ I use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
 
 ## 📝 Todos
 
-- [ ] add beforeRoute example
+- [x] add Vue Router beforeEach example
 - [ ] add layout example
 - [ ] convert every function to arrow function
 - [ ] create a script to 'reset' this template
@@ -171,7 +171,7 @@ I use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
 - [ ] add a mockup api instead of using availabe public api
 - [ ] fix the mobile view
 - [ ] add responsive media query example using Tailwindcss
-- [ ] create plugin folder for easier plugin management
+- [x] create plugin folder for easier plugin management
 - [x] able to change head title
 - [x] add github.io page
 - [x] add vee validate
