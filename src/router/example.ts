@@ -5,7 +5,10 @@ export const example = [
   {
     path: '/',
     name: 'HelloWorld',
-    component: HelloWorld
+    component: HelloWorld,
+    meta: {
+      siteName: 'Hello World!'
+    }
   },
   {
     path: '/boilerplate-examples',
