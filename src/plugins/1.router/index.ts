@@ -1,6 +1,6 @@
-import type { App } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 import routes from '@/navigation/routes.ts';
+import type { App } from 'vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.VITE_BASE_URL),

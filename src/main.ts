@@ -1,6 +1,5 @@
 import { createApp } from 'vue';
 import { registerPlugins } from '@/plugins';
-import { createPinia } from 'pinia';
 import { createHead } from '@unhead/vue';
 import { QueryClient, VueQueryPlugin } from '@tanstack/vue-query';
 import './assets/css/style.css';
@@ -9,7 +8,6 @@ import App from './App.vue';
 const app = createApp(App);
 registerPlugins(app);
 
-const pinia = createPinia();
 const head = createHead();
 
 const queryClient = new QueryClient({
@@ -23,7 +21,6 @@ const queryClient = new QueryClient({
 });
 
 app.use(head);
-app.use(pinia);
 app.use(VueQueryPlugin, { queryClient });
 
 app.mount('#app');
