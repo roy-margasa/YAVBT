@@ -1,18 +1,9 @@
 import { createHead } from '@unhead/vue/client';
-import { TemplateParamsPlugin, AliasSortingPlugin } from '@unhead/vue/plugins';
 import type { App } from 'vue';
 
-const head = createHead({
-  plugins: [TemplateParamsPlugin, AliasSortingPlugin]
-});
+const head = createHead();
 
 head.push({
-  titleTemplate: '%siteName %separator %s',
-  title: 'YAVBT',
-  templateParams: {
-    separator: '|',
-    siteName: 'Default site name here'
-  },
   meta: [
     {
       name: 'description',
