@@ -1,6 +1,7 @@
 <div>
-  <h1>Yet Another Vue 3 Boilerplate Template v0.6.0</h1>
+  <h1>Yet Another Vue 3 Boilerplate Template</h1>
   <div>
+    <img alt="repo-size" src="https://img.shields.io/github/package-json/v/roy-margasa/YAVBT.svg" />
     <img alt="repo-size" src="https://img.shields.io/github/repo-size/roy-margasa/YAVBT.svg" />
     <img alt="last-commit" src="https://img.shields.io/github/last-commit/roy-margasa/YAVBT.svg" />
   </div>
