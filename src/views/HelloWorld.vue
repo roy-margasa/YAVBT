@@ -6,6 +6,7 @@ import SimpleNamedSlot from '@/components/example/SimpleNamedSlot.vue';
 import { useQuoteStore } from '@/stores/example/quote';
 
 const quoteStore = useQuoteStore();
+const version = __APP_VERSION__;
 
 // 📜 CODE BLOCK - head content
 useHead({
@@ -22,7 +23,7 @@ useHead({
   <div
     class="flex flex-col justify-center items-center min-h-screen bg-linear-to-r from-gray-950 to-blue-600 p-3"
   >
-    <simple-prop msg="YAVBT v0.5.3" />
+    <simple-prop :msg="`YAVBT ${version}`" />
     <simple-named-slot class="text-center">
       {{ quoteStore.quote }}
       <template v-slot:subtitle>{{ quoteStore.author }}</template>
