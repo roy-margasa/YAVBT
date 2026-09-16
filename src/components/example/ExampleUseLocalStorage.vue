@@ -29,7 +29,19 @@ onMounted(() => {
 
 <template>
   <div class="border border-gray-200 p-4 rounded-lg flex flex-col items-center basis-xs">
-    <h3 class="border-b pb-1 mb-4">useLocalStorage</h3>
+    <div class="border-b border-gray-300 pb-1 mb-4 w-full text-center">
+      <h3>useLocalStorage</h3>
+      <div class="leading-0">
+        <a
+          href="https://github.com/roy-margasa/YAVBT/blob/master/src/components/example/ExampleUseLocalStorage.vue"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-700 text-xs"
+        >
+          source
+        </a>
+      </div>
+    </div>
     <div class="text-center">
       <input
         v-model="textInput"

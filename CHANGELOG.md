@@ -2,6 +2,20 @@
 
 All notable changes to this project are documented in this file.
 
+## [Unreleased]
+
+### Added
+
+- Link to example Vue file source
+
+### Changed
+
+-
+
+### Fixed
+
+-
+
 ## [0.6.0] - 2026-09-16
 
 ### Added
