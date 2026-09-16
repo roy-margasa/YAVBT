@@ -5,9 +5,9 @@ const target = useTemplateRef('target');
 const ignoreTarget = useTemplateRef('ignoreTarget');
 const textDisplay = ref('Waiting for click...');
 
-function onClick() {
+const onClick = () => {
   textDisplay.value = 'Button clicked!';
-}
+};
 
 onClickOutside(
   target,

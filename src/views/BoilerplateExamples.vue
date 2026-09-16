@@ -16,7 +16,9 @@ useHead({ title: 'Boilerplate Examples' });
 
 <template>
   <div class="min-h-screen p-4">
-    <div class="grid grid-flow-row grid-cols-[repeat(auto-fit,360px)] gap-4 justify-center">
+    <h1 class="text-4xl font-bold mb-8 text-center">Boilerplate Examples</h1>
+
+    <div class="grid grid-flow-row grid-cols-1 md:grid-cols-3 gap-4 justify-center">
       <ExampleAssets />
 
       <ExampleComposable />

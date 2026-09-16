@@ -6,19 +6,19 @@ const isSaved = ref(false);
 
 const storedValue = useLocalStorage('exampleTextInput', '');
 
-function saveToLocalStorage() {
+const saveToLocalStorage = () => {
   storedValue.value = textInput.value;
   isSaved.value = true;
-}
+};
 
-function removeLocalStorage() {
+const removeLocalStorage = () => {
   localStorage.removeItem('exampleTextInput');
   // Clear the useLocalStorage ref
   // If not cleared, the old value will still be there
   storedValue.value = '';
   textInput.value = '';
   isSaved.value = false;
-}
+};
 
 onMounted(() => {
   if (storedValue.value) {
@@ -35,7 +35,7 @@ onMounted(() => {
         v-model="textInput"
         type="text"
         placeholder="Type any string here"
-        class="border border-gray-300 rounded px-2 py-1 w-80"
+        class="border border-gray-300 rounded px-2 py-1 w-full md:w-80"
       />
       <button
         class="rounded bg-emerald-700 text-white px-4 py-2 cursor-pointer mt-2 hover:bg-emerald-800"

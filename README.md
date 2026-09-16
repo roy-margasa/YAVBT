@@ -68,6 +68,13 @@ YAVBT/
 │   │   └── useDefaultHead.ts         # Update the title value as needed
 │   ├── constants/                    # Application constants
 │   │   └── example/                   # Example for constant (remove this folder)
+│   ├── plugins/                      # Vue plugin configuration
+│   │   ├── _shared/                  # Shared helpers for plugins
+│   │   ├── 1.router/                 # Vue Router configuration
+│   │   ├── 2.pinia/                  # Pinia configuration
+│   │   ├── others/                   # Other plugin configurations
+│   │   ├── index.ts                  # Finds and registers plugins automatically
+│   │   └── README.md                 # Plugin folder documentation
 │   ├── router/                       # Vue Router configuration
 │   │   ├── example.ts                # Example route config (remove this)
 │   │   ├── index.ts                  # Main Vue Router logic
@@ -161,7 +168,7 @@ Use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
 
 - [x] add Vue Router beforeEach example
 - [ ] add layout example
-- [ ] convert every function to arrow function
+- [x] convert every function to arrow function
 - [ ] create a script to 'reset' this template
 - [ ] sfc example with defineModel
 - [ ] test unit
@@ -169,7 +176,7 @@ Use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
 - [ ] add link to the source on each example
 - [x] add Tanstack Query and example how to use it
 - [ ] add a mockup api instead of using availabe public api
-- [ ] fix the mobile view
+- [x] fix the mobile view
 - [ ] add responsive media query example using Tailwindcss
 - [x] create plugin folder for easier plugin management
 - [x] able to change head title
