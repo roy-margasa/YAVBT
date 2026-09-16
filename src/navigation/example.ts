@@ -15,7 +15,7 @@ export const example = [
     name: 'BoilerplateExamples',
     component: Boilerplate,
     meta: {
-      title: 'Boilerplate Examples'
+      title: 'Lorem Ipsum'
     }
   }
 ];

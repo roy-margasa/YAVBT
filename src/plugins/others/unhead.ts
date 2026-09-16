@@ -1,10 +1,13 @@
 import { createHead } from '@unhead/vue/client';
-import { DEFAULT_PAGE_DESCRIPTION } from '@/config/site';
+import { currentRouteTitle } from '../_shared/routeMeta';
+import { SITE_NAME, DEFAULT_PAGE_DESCRIPTION } from '@/config/site';
 import type { App } from 'vue';
 
 const head = createHead();
 
-head.push({
+export const routeTitleEntry = head.push({
+  title: () => currentRouteTitle.value,
+  titleTemplate: (title) => `${title} | ${SITE_NAME}`,
   meta: [
     {
       name: 'description',

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 // 📜 CODE BLOCK - init
+import { useHead } from '@unhead/vue';
 import ExampleComposable from '@/components/example/ExampleComposable.vue';
 import ExampleStateManagement from '@/components/example/ExampleStateManagement.vue';
 import ExampleAxios from '@/components/example/ExampleAxios.vue';
@@ -8,6 +9,9 @@ import ExampleUseLocalStorage from '@/components/example/ExampleUseLocalStorage.
 import ExampleUseDateFormat from '@/components/example/ExampleUseDateFormat.vue';
 import ExampleAssets from '@/components/example/ExampleAssets.vue';
 import ExampleVeeValidate from '@/components/example/ExampleVeeValidate.vue';
+
+// Example for overriding page title
+useHead({ title: 'Boilerplate Examples' });
 </script>
 
 <template>
