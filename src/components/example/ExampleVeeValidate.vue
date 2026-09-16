@@ -55,6 +55,7 @@ const onSubmitComponent = (values: Record<string, unknown>) => {
           type="email"
           class="border border-gray-300 rounded px-2 py-1 w-full"
           :class="{ 'border-red-600': errors.email }"
+          placeholder="Insert email"
         />
         <p v-if="errors.email" class="mt-1 text-sm text-red-600">
           {{ errors.email }}
@@ -86,6 +87,7 @@ const onSubmitComponent = (values: Record<string, unknown>) => {
             :class="{ 'border-red-600': errors.email }"
             validate-on-input
             autocomplete="off"
+            placeholder="Insert email"
           />
           <ErrorMessage name="email" class="block mt-1 text-sm text-red-600" />
           <button

@@ -1,8 +1,13 @@
+import { readFileSync } from 'node:fs';
 import { fileURLToPath, URL } from 'node:url';
 import { defineConfig, loadEnv } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import tailwindcss from '@tailwindcss/vite';
 import AutoImport from 'unplugin-auto-import/vite';
+
+const packageJson = JSON.parse(
+  readFileSync(fileURLToPath(new URL('./package.json', import.meta.url)), 'utf-8')
+) as { version: string };
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
@@ -31,6 +36,9 @@ export default defineConfig(({ mode }) => {
         // Ref for fileURLToPath: https://nodejs.org/api/url.html#fileurltopathurl
         '@': fileURLToPath(new URL('./src', import.meta.url))
       }
+    },
+    define: {
+      __APP_VERSION__: JSON.stringify(packageJson.version)
     }
   };
 });

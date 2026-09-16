@@ -1,15 +1,21 @@
 <script setup lang="ts">
 // 📜 CODE BLOCK - init
+import { useHead } from '@unhead/vue';
 import SimpleProp from '@/components/example/SimpleProp.vue';
 import SimpleNamedSlot from '@/components/example/SimpleNamedSlot.vue';
 import { useQuoteStore } from '@/stores/example/quote';
+
 const quoteStore = useQuoteStore();
+const version = __APP_VERSION__;
 
 // 📜 CODE BLOCK - head content
-import { useDefaultHead } from '@/composables/useDefaultHead';
-
-useDefaultHead({
-  siteName: 'Yet Another Vue 3 Boilerplate Template'
+useHead({
+  meta: [
+    {
+      name: 'description',
+      content: "Yet Another Vue 3 Boilerplate Template!? It's a cheat sheet too!?"
+    }
+  ]
 });
 </script>
 
@@ -17,7 +23,7 @@ useDefaultHead({
   <div
     class="flex flex-col justify-center items-center min-h-screen bg-linear-to-r from-gray-950 to-blue-600 p-3"
   >
-    <simple-prop msg="YAVBT v0.5.3" />
+    <simple-prop :msg="`YAVBT ${version}`" />
     <simple-named-slot class="text-center">
       {{ quoteStore.quote }}
       <template v-slot:subtitle>{{ quoteStore.author }}</template>
@@ -25,8 +31,8 @@ useDefaultHead({
     <router-link to="/boilerplate-examples" class="mt-8 bg-gray-50 px-4 py-2 text-blue-500 rounded"
       >Boilerplate and Examples</router-link
     >
-    <router-link
-      to="https://github.com/roy-margasa/YAVBT"
+    <a
+      href="https://github.com/roy-margasa/YAVBT"
       target="_blank"
       rel="noopener noreferrer"
       class="mt-4 px-4 py-2 border border-blue-500 rounded text-white"
@@ -46,6 +52,6 @@ useDefaultHead({
         </svg>
         View on GitHub
       </div>
-    </router-link>
+    </a>
   </div>
 </template>

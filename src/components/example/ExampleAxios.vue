@@ -28,9 +28,9 @@ const isLoadingMedia = computed(
 
 const mediaType = computed(() => utilMediaCheck(dataWoof.value));
 
-function renderingIsDone() {
+const renderingIsDone = () => {
   isRendering.value = false;
-}
+};
 </script>
 
 <template>

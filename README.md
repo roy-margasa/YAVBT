@@ -9,7 +9,7 @@
 
 It's kinda a hassle to set up every Vue SPA project from zero. The purpose of this boilerplate is that it can be a "cheatsheet" and a learning material for best practices in Vue structure.
 
-So every time I forget how to use certain Vue features or libraries, I can go back to this template and re-learn how things work.
+So every time you forget how to use certain Vue features or libraries, you can go back to this template and re-learn how things work.
 
 ### 📑 Table of Contents
 
@@ -26,20 +26,20 @@ So every time I forget how to use certain Vue features or libraries, I can go ba
 
 ## ⛓️ What Is Included and What Is That?
 
-| Library                                                                         | Version                                                                  | Description                                                                                                                                                                                                                                                                                                               |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Axios](https://axios-http.com/)                                                | ![Axios](https://img.shields.io/badge/%5E1.13.2-blue.svg)                | A very helpful promise-based HTTP client for the browser and Node.js. Can't wait until I confuse myself with the interceptors                                                                                                                                                                                             |
-| [Eslint](https://eslint.org/)                                                   | ![Eslint](https://img.shields.io/badge/%5E9.39.2-blue.svg)               | Getting scolded by linters never gets old and always gets on my nerves. Yeah, I shouldn't ignore them.                                                                                                                                                                                                                    |
-| [Pinia](https://pinia.vuejs.org/)                                               | ![Pinia](https://img.shields.io/badge/%5E3.0.4-blue.svg)                 | The Vue state management library for sharing a state across components or pages. Just remember not to put everything on a flat global state file, it's not fun.                                                                                                                                                           |
-| [Prettier](https://prettier.io/)                                                | ![Prettier](https://img.shields.io/badge/3.8.1-blue.svg)                 | Code formatter for consistent code style and to stop bickering with fellow FE colleagues                                                                                                                                                                                                                                  |
-| [Tailwind CSS](https://tailwindcss.com/)                                        | ![Tailwind%20CSS](https://img.shields.io/badge/%5E4.1.18-blue.svg)       | The most popular utility-first CSS framework that's very easy and intuitive to use. But unfortunately it will often create an ugly CSS class train and forget that I can make a reusable clean custom CSS class.                                                                                                          |
-| [Unhead](https://unhead.unjs.io/)                                               | ![Unhead](https://img.shields.io/badge/1.10.0--beta.6-blue.svg)          | Reactive head tag manager for Vue for handling search engine SEO. Is it proven? I don't know.                                                                                                                                                                                                                             |
-| [unplugin-auto-import](https://www.npmjs.com/package/unplugin-auto-import)      | ![unplugin-auto-import](https://img.shields.io/badge/%5E21.0.0-blue.svg) | Used for auto import Vue APIs (so I don't need to write `import { ref } from 'vue'`) and everything inside `\utils\` folder. I added 'util' suffix on each exported variables / functions, so I don't get confused about where the hell these code comes from.                                                            |
-| [Vee Validate](https://vee-validate.logaretm.com/v4/)                           | ![Vee%20Validate](https://img.shields.io/badge/%5E4.15.1-blue.svg)       | The most popular Vue validation library with documentation that insists on giving me a tutorial using Option API first. Oh, and guess what? The documentation is confusing too!                                                                                                                                           |
-| [Vue Router](https://router.vuejs.org/)                                         | ![Vue%20Router](https://img.shields.io/badge/%5E4.6.4-blue.svg)          | Expressive, configurable and convenient routing for Vue.js. Expressive?                                                                                                                                                                                                                                                   |
-| [VueUse](https://vueuse.org/)                                                   | ![VueUse](https://img.shields.io/badge/%5E14.1.0-blue.svg)               | The Swiss Army Knife of Vue composition utilities with confusing documentation.                                                                                                                                                                                                                                           |
-| [yup](https://github.com/jquense/yup)                                           | ![yup](https://img.shields.io/badge/%5E1.7.1-blue.svg)                   | Yup, I kinda understand what is this for. Instead of writing regex manually for form validation, I can use yup's methods and chain it. Yup, it's kinda interesting.                                                                                                                                                       |
-| [Tanstack Query](https://tanstack.com/query/latest/docs/framework/vue/overview) | ![@tanstack/vue-query](https://img.shields.io/badge/%5E5.101.4-blue)     | I'm pretty late for this Tanstack party. It's so incredibly useful, especially for trying to handle data table. I can manage what to cache, when to fetch, and other neat features. The only downside is that it needs quite a lot of configs at first. The documentation is good and easy to understand, what a delight! |
+| Library                                                                         | Version                                                                  | Description                                                                                                                                                                                                                                                                                                                     |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Axios](https://axios-http.com/)                                                | ![Axios](https://img.shields.io/badge/%5E1.13.2-blue.svg)                | A very helpful promise-based HTTP client for the browser and Node.js. Can't wait until you confuse yourself with the interceptors                                                                                                                                                                                               |
+| [Eslint](https://eslint.org/)                                                   | ![Eslint](https://img.shields.io/badge/%5E9.39.2-blue.svg)               | Getting scolded by linters never gets old and always gets on your nerves. Yeah, you shouldn't ignore them.                                                                                                                                                                                                                      |
+| [Pinia](https://pinia.vuejs.org/)                                               | ![Pinia](https://img.shields.io/badge/%5E3.0.4-blue.svg)                 | The Vue state management library for sharing a state across components or pages. Just remember not to put everything on a flat global state file, it's not fun.                                                                                                                                                                 |
+| [Prettier](https://prettier.io/)                                                | ![Prettier](https://img.shields.io/badge/3.8.1-blue.svg)                 | Code formatter for consistent code style and to stop bickering with fellow FE colleagues                                                                                                                                                                                                                                        |
+| [Tailwind CSS](https://tailwindcss.com/)                                        | ![Tailwind%20CSS](https://img.shields.io/badge/%5E4.1.18-blue.svg)       | The most popular utility-first CSS framework that's very easy and intuitive to use. But unfortunately it will often create an ugly CSS class train and forget that you can make a reusable clean custom CSS class.                                                                                                              |
+| [Unhead](https://unhead.unjs.io/)                                               | ![Unhead](https://img.shields.io/badge/3.4.1-blue.svg)                   | Reactive head tag manager for Vue for handling search engine SEO. Is it proven? You tell me.                                                                                                                                                                                                                                    |
+| [unplugin-auto-import](https://www.npmjs.com/package/unplugin-auto-import)      | ![unplugin-auto-import](https://img.shields.io/badge/%5E21.0.0-blue.svg) | Used for auto import Vue APIs (so you don't need to write `import { ref } from 'vue'`) and everything inside `\utils\` folder. The 'util' suffix on each exported variable / function helps you avoid wondering where the hell these code comes from.                                                                           |
+| [Vee Validate](https://vee-validate.logaretm.com/v4/)                           | ![Vee%20Validate](https://img.shields.io/badge/%5E4.15.1-blue.svg)       | The most popular Vue validation library with documentation that insists on giving you a tutorial using Option API first. Oh, and guess what? The documentation is confusing too!                                                                                                                                                |
+| [Vue Router](https://router.vuejs.org/)                                         | ![Vue%20Router](https://img.shields.io/badge/%5E4.6.4-blue.svg)          | Expressive, configurable and convenient routing for Vue.js. Expressive?                                                                                                                                                                                                                                                         |
+| [VueUse](https://vueuse.org/)                                                   | ![VueUse](https://img.shields.io/badge/%5E14.1.0-blue.svg)               | The Swiss Army Knife of Vue composition utilities with confusing documentation.                                                                                                                                                                                                                                                 |
+| [yup](https://github.com/jquense/yup)                                           | ![yup](https://img.shields.io/badge/%5E1.7.1-blue.svg)                   | Yup, you kinda understand what this is for. Instead of writing regex manually for form validation, you can use yup's methods and chain them. Yup, it's kinda interesting.                                                                                                                                                       |
+| [Tanstack Query](https://tanstack.com/query/latest/docs/framework/vue/overview) | ![@tanstack/vue-query](https://img.shields.io/badge/%5E5.101.4-blue)     | You're pretty late for this Tanstack party. It's so incredibly useful, especially for trying to handle data tables. You can manage what to cache, when to fetch, and other neat features. The only downside is that it needs quite a lot of configs at first. The documentation is good and easy to understand, what a delight! |
 
 ## 🔝 Top 8 VueUse composables
 
@@ -68,6 +68,13 @@ YAVBT/
 │   │   └── useDefaultHead.ts         # Update the title value as needed
 │   ├── constants/                    # Application constants
 │   │   └── example/                   # Example for constant (remove this folder)
+│   ├── plugins/                      # Vue plugin configuration
+│   │   ├── _shared/                  # Shared helpers for plugins
+│   │   ├── 1.router/                 # Vue Router configuration
+│   │   ├── 2.pinia/                  # Pinia configuration
+│   │   ├── others/                   # Other plugin configurations
+│   │   ├── index.ts                  # Finds and registers plugins automatically
+│   │   └── README.md                 # Plugin folder documentation
 │   ├── router/                       # Vue Router configuration
 │   │   ├── example.ts                # Example route config (remove this)
 │   │   ├── index.ts                  # Main Vue Router logic
@@ -127,7 +134,7 @@ Or use Component Type Hierarchy, example: `/src/components/common/`, `/src/compo
 
 ### Prerequisites
 
-Currently I'm using [Node Js](https://nodejs.org/en/) version `v23.3.0` and [PNPM](https://pnpm.io/) version `v10.28.1`.
+For this boilerplate, you need [Node Js](https://nodejs.org/en/) version `v23.3.0` and [PNPM](https://pnpm.io/) version `v10.28.1`.
 
 ### Installation
 
@@ -142,11 +149,11 @@ Clone this repo and just do a `pnpm install`. Here's the order of what to do:
 7. Remove the content of 'utils' folder
 8. Remove the 'constants/example' folder
 
-Maybe I will create a Node script for removing those files. Yeah, that's a good idea.
+I will create a Node script in the future to remove these example files. Yeah, that's a good idea.
 
 #### Scripts
 
-I use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
+Use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
 
 | Script                | Action                              |
 | --------------------- | ----------------------------------- |
@@ -159,9 +166,9 @@ I use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
 
 ## 📝 Todos
 
-- [ ] add beforeRoute example
+- [x] add Vue Router beforeEach example
 - [ ] add layout example
-- [ ] convert every function to arrow function
+- [x] convert every function to arrow function
 - [ ] create a script to 'reset' this template
 - [ ] sfc example with defineModel
 - [ ] test unit
@@ -169,9 +176,9 @@ I use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
 - [ ] add link to the source on each example
 - [x] add Tanstack Query and example how to use it
 - [ ] add a mockup api instead of using availabe public api
-- [ ] fix the mobile view
+- [x] fix the mobile view
 - [ ] add responsive media query example using Tailwindcss
-- [ ] create plugin folder for easier plugin management
+- [x] create plugin folder for easier plugin management
 - [x] able to change head title
 - [x] add github.io page
 - [x] add vee validate

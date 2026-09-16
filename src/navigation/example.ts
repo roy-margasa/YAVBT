@@ -5,11 +5,17 @@ export const example = [
   {
     path: '/',
     name: 'HelloWorld',
-    component: HelloWorld
+    component: HelloWorld,
+    meta: {
+      title: 'Hello World!'
+    }
   },
   {
     path: '/boilerplate-examples',
     name: 'BoilerplateExamples',
-    component: Boilerplate
+    component: Boilerplate,
+    meta: {
+      title: 'Lorem Ipsum'
+    }
   }
 ];
