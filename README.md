@@ -50,7 +50,7 @@ So every time you forget how to use certain Vue features or libraries, you can g
 - [`useDebounceFn`](https://vueuse.org/shared/useDebounceFn/#usedebouncefn) - Debounce execution of a function for preventing repeat execution on repeat clicks
 - [`useEventListener`](https://vueuse.org/core/useEventListener/) - Automatically remove event listener on unmounted
 - [`useLocalStorage`](https://vueuse.org/core/useLocalStorage/#uselocalstorage) - Reactive localStorage
-- [`useMediaQuery`](https://vueuse.org/core/useMediaQuery/#usemediaquery) - Reactive media query
+- [`useBreakpoints`](https://vueuse.org/core/useBreakpoints/#usebreakpoints) - Reactive viewport breakpoints
 - [`useTimeoutFn`](https://vueuse.org/shared/useTimeoutFn/#usetimeoutfn) - Auto clean up timeout
 
 ## 📂 Project Structure
@@ -174,11 +174,10 @@ Use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
 - [ ] sfc example with defineModel
 - [ ] test unit
 - [x] fix 404 when refreshed from boilerplate-example page
-- [ ] add link to the source on each example
+- [x] add link to the source on each example
 - [x] add Tanstack Query and example how to use it
 - [ ] add a mockup api instead of using availabe public api
 - [x] fix the mobile view
-- [ ] add responsive media query example using Tailwindcss
 - [x] create plugin folder for easier plugin management
 - [x] able to change head title
 - [x] add github.io page

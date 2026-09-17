@@ -10,7 +10,7 @@ All notable changes to this project are documented in this file.
 
 ### Changed
 
--
+- Change top 8 Vueuse: useMediaQuery to useBreakpoints. It's more likely to be used
 
 ### Fixed
 

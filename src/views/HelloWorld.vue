@@ -1,22 +1,11 @@
 <script setup lang="ts">
 // 📜 CODE BLOCK - init
-import { useHead } from '@unhead/vue';
 import SimpleProp from '@/components/example/SimpleProp.vue';
 import SimpleNamedSlot from '@/components/example/SimpleNamedSlot.vue';
 import { useQuoteStore } from '@/stores/example/quote';
 
 const quoteStore = useQuoteStore();
 const version = __APP_VERSION__;
-
-// 📜 CODE BLOCK - head content
-useHead({
-  meta: [
-    {
-      name: 'description',
-      content: "Yet Another Vue 3 Boilerplate Template!? It's a cheat sheet too!?"
-    }
-  ]
-});
 </script>
 
 <template>

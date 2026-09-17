@@ -11,7 +11,15 @@ import ExampleAssets from '@/components/example/ExampleAssets.vue';
 import ExampleVeeValidate from '@/components/example/ExampleVeeValidate.vue';
 
 // Example for overriding page title
-useHead({ title: 'Boilerplate Examples' });
+useHead({
+  title: 'Boilerplate Examples',
+  meta: [
+    {
+      name: 'description',
+      content: 'Some example that can be used as references'
+    }
+  ]
+});
 </script>
 
 <template>
