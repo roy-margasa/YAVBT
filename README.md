@@ -171,7 +171,7 @@ Use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
 - [ ] add layout example
 - [x] convert every function to arrow function
 - [ ] create a script to 'reset' this template
-- [ ] sfc example with defineModel
+- [x] sfc example with defineModel and provide / inject
 - [ ] test unit
 - [x] fix 404 when refreshed from boilerplate-example page
 - [x] add link to the source on each example

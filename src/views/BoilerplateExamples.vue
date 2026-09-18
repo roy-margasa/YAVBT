@@ -3,6 +3,7 @@
 import { useHead } from '@unhead/vue';
 import ExampleComposable from '@/components/example/ExampleComposable.vue';
 import ExampleStateManagement from '@/components/example/ExampleStateManagement.vue';
+import ExampleDefineModel from '@/components/example/ExampleDefineModel/Parent.vue';
 import ExampleAxios from '@/components/example/ExampleAxios.vue';
 import ExampleOnClickOutside from '@/components/example/ExampleOnClickOutside.vue';
 import ExampleUseLocalStorage from '@/components/example/ExampleUseLocalStorage.vue';
@@ -30,6 +31,8 @@ useHead({
       <ExampleAssets />
 
       <ExampleComposable />
+
+      <ExampleDefineModel />
 
       <ExampleStateManagement />
 

@@ -7,6 +7,7 @@ All notable changes to this project are documented in this file.
 ### Added
 
 - Link to example Vue file source
+- Example for defineModel and Provide / Inject
 
 ### Changed
 
