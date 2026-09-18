@@ -2,7 +2,7 @@
 
 All notable changes to this project are documented in this file.
 
-## [unreleased]
+## [0.6.2] - 2026-09-18
 
 ### Added
 
@@ -11,6 +11,8 @@ All notable changes to this project are documented in this file.
 ### Changed
 
 - Change button styling
+
+[0.6.2]: https://github.com/roy-margasa/YAVBT/releases/tag/v0.6.2
 
 ## [0.6.1] - 2026-09-18
 
