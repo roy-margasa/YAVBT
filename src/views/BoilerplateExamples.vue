@@ -49,7 +49,7 @@ useHead({
     <div class="mt-4">
       <RouterLink
         to="/"
-        class="px-4 py-2 text-blue-500 rounded w-full inline-block text-center border border-blue-300"
+        class="px-4 py-2 text-white rounded-lg w-full inline-block text-center bg-blue-500 hover:bg-blue-600 transition-colors duration-300 ease-in-out"
         >Go Back</RouterLink
       >
     </div>

@@ -50,7 +50,7 @@ onMounted(() => {
         class="border border-gray-300 rounded px-2 py-1 w-full md:w-80"
       />
       <button
-        class="rounded bg-emerald-700 text-white px-4 py-2 cursor-pointer mt-2 hover:bg-emerald-800"
+        class="mt-2 rounded border px-2 py-3 border-emerald-500 text-emerald-500 text-sm leading-1 cursor-pointer hover:text-emerald-700"
         @click="saveToLocalStorage"
       >
         Save to Local Storage

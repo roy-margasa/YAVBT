@@ -17,7 +17,9 @@ const version = __APP_VERSION__;
       {{ quoteStore.quote }}
       <template v-slot:subtitle>{{ quoteStore.author }}</template>
     </simple-named-slot>
-    <router-link to="/boilerplate-examples" class="mt-8 bg-gray-50 px-4 py-2 text-blue-500 rounded"
+    <router-link
+      to="/boilerplate-examples"
+      class="mt-8 bg-gray-50 px-4 py-2 text-blue-500 rounded hover:text-blue-700"
       >Boilerplate and Examples</router-link
     >
     <a

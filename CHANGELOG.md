@@ -2,6 +2,12 @@
 
 All notable changes to this project are documented in this file.
 
+## [unreleased]
+
+### Changed
+
+- Change button styling
+
 ## [0.6.1] - 2026-09-18
 
 ### Added
