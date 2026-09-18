@@ -4,6 +4,10 @@ All notable changes to this project are documented in this file.
 
 ## [unreleased]
 
+### Added
+
+- Example layout, for cleaner code on each example component file
+
 ### Changed
 
 - Change button styling

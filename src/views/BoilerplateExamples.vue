@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // 📜 CODE BLOCK - init
 import { useHead } from '@unhead/vue';
+import ExampleLayout from '@/components/example/ExampleLayout.vue';
 import ExampleComposable from '@/components/example/ExampleComposable.vue';
 import ExampleStateManagement from '@/components/example/ExampleStateManagement.vue';
 import ExampleDefineModel from '@/components/example/ExampleDefineModel/Parent.vue';
@@ -28,24 +29,70 @@ useHead({
     <h1 class="text-4xl font-bold mb-8 text-center">Boilerplate Examples</h1>
 
     <div class="grid grid-flow-row grid-cols-1 md:grid-cols-3 gap-4 justify-center">
-      <ExampleAssets />
+      <ExampleLayout
+        title="Image Assets"
+        source-link="https://github.com/roy-margasa/YAVBT/blob/master/src/components/example/ExampleAssets.vue"
+      >
+        <ExampleAssets />
+      </ExampleLayout>
 
-      <ExampleComposable />
+      <ExampleLayout
+        title="Composable"
+        source-link="https://github.com/roy-margasa/YAVBT/blob/master/src/components/example/ExampleComposable.vue"
+      >
+        <ExampleComposable />
+      </ExampleLayout>
 
-      <ExampleDefineModel />
+      <ExampleLayout
+        title="defineModel + Provide / Inject"
+        source-link="https://github.com/roy-margasa/YAVBT/blob/master/src/components/example/ExampleDefineModel/Parent.vue"
+      >
+        <ExampleDefineModel />
+      </ExampleLayout>
 
-      <ExampleStateManagement />
+      <ExampleLayout
+        title="Pinia"
+        source-link="https://github.com/roy-margasa/YAVBT/blob/master/src/components/example/ExampleStateManagement.vue"
+      >
+        <ExampleStateManagement />
+      </ExampleLayout>
 
-      <ExampleAxios />
+      <ExampleLayout
+        title="Axios + Tanstack Vue Query"
+        source-link="https://github.com/roy-margasa/YAVBT/blob/master/src/components/example/ExampleAxios.vue"
+      >
+        <ExampleAxios />
+      </ExampleLayout>
 
-      <ExampleVeeValidate />
+      <ExampleLayout
+        title="Vee Validate + Yup"
+        source-link="https://github.com/roy-margasa/YAVBT/blob/master/src/components/example/ExampleVeeValidate.vue"
+      >
+        <ExampleVeeValidate />
+      </ExampleLayout>
 
-      <ExampleOnClickOutside />
+      <ExampleLayout
+        title="Vueuse onClickOutside"
+        source-link="https://github.com/roy-margasa/YAVBT/blob/master/src/components/example/ExampleOnClickOutside.vue"
+      >
+        <ExampleOnClickOutside />
+      </ExampleLayout>
 
-      <ExampleUseLocalStorage />
+      <ExampleLayout
+        title="Vueuse useLocalStorage"
+        source-link="https://github.com/roy-margasa/YAVBT/blob/master/src/components/example/ExampleUseLocalStorage.vue"
+      >
+        <ExampleUseLocalStorage />
+      </ExampleLayout>
 
-      <ExampleUseDateFormat />
+      <ExampleLayout
+        title="Vueuse useDateFormat + useNow"
+        source-link="https://github.com/roy-margasa/YAVBT/blob/master/src/components/example/ExampleUseDateFormat.vue"
+      >
+        <ExampleUseDateFormat />
+      </ExampleLayout>
     </div>
+
     <div class="mt-4">
       <RouterLink
         to="/"

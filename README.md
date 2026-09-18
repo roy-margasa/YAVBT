@@ -166,7 +166,7 @@ Use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
 ## 📝 Todos
 
 - [x] add Vue Router beforeEach example
-- [ ] add layout example
+- [x] add layout example
 - [x] convert every function to arrow function
 - [ ] create a script to 'reset' this template
 - [x] sfc example with defineModel and provide / inject
