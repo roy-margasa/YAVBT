@@ -2,7 +2,7 @@
 
 All notable changes to this project are documented in this file.
 
-## [Unreleased]
+## [0.6.1] - 2026-09-18
 
 ### Added
 
@@ -13,9 +13,7 @@ All notable changes to this project are documented in this file.
 
 - Change top 8 Vueuse: useMediaQuery to useBreakpoints. It's more likely to be used
 
-### Fixed
-
--
+[0.6.1]: https://github.com/roy-margasa/YAVBT/releases/tag/v0.6.1
 
 ## [0.6.0] - 2026-09-16
 
