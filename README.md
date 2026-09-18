@@ -65,10 +65,9 @@ YAVBT/
 │   ├── components/                   # Reusable Vue components
 │   │   └── example/                  # Example components (remove this folder)
 │   ├── composables/                  # Reusable composition functions
-│   │   ├── example/                  # Example composable (remove this folder)
-│   │   └── useDefaultHead.ts         # Update the title value as needed
+│   │   └── example/                  # Example composable (remove this folder)
 │   ├── constants/                    # Application constants
-│   │   └── example/                   # Example for constant (remove this folder)
+│   │   └── example/                  # Example for constant (remove this folder)
 │   ├── plugins/                      # Vue plugin configuration
 │   │   ├── _shared/                  # Shared helpers for plugins
 │   │   ├── 1.router/                 # Vue Router configuration
@@ -76,26 +75,25 @@ YAVBT/
 │   │   ├── others/                   # Other plugin configurations
 │   │   ├── index.ts                  # Finds and registers plugins automatically
 │   │   └── README.md                 # Plugin folder documentation
-│   ├── router/                       # Vue Router configuration
-│   │   ├── example.ts                # Example route config (remove this)
-│   │   ├── index.ts                  # Main Vue Router logic
-│   │   └── routes.ts                 # Add the routings here
+│   ├── navigation                    # Vue Router configuration
+│   │   ├── example.ts                # Example route config (remove this)│   │   ├── index.ts                  # Main Vue Router logic
+│   │   └── routes.ts                 # Import the routing files here
 │   ├── stores/                       # Pinia state management
 │   │   └── example/                  # Example for how to write Pinia (remove this folder)
 │   ├── types/                        # TypeScript type definitions
-│   │   └── example/                   # Example for how to typing API response (remove this folder)
+│   │   └── example/                  # Example for how to typing API response (remove this folder)
 │   ├── utils/                        # Utility functions (auto-imported)
 │   │   └── ExtensionCheck.ts         # Example for utility (remove this if not necessary)
 │   ├── views/                        # Page components
 │   │   ├── BoilerplateExamples.vue   # (remove this)
 │   │   └── HelloWorld.vue            # (remove this)
 │   ├── App.vue                       # Root component
-│   ├── auto-imports.d.ts             # Auto-import type definitions
+│   ├── auto-imports.d.ts             # Auto-import type definitions (auto generated)
 │   └── main.ts                       # Application entry point
-├── public/                           # Public static assets
-│   └── ...
+├── public/
 ├── index.html                        # HTML entry point
-├── package.json                      # Project version and dependencies
+├── package.json
+├── CHANGELOG.md
 └── README.md                         # This file
 ```
 
