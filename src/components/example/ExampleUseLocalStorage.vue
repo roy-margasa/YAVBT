@@ -28,31 +28,28 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="border border-gray-200 p-4 rounded-lg flex flex-col items-center basis-xs">
-    <h3 class="border-b pb-1 mb-4">useLocalStorage</h3>
-    <div class="text-center">
-      <input
-        v-model="textInput"
-        type="text"
-        placeholder="Type any string here"
-        class="border border-gray-300 rounded px-2 py-1 w-full md:w-80"
-      />
-      <button
-        class="rounded bg-emerald-700 text-white px-4 py-2 cursor-pointer mt-2 hover:bg-emerald-800"
-        @click="saveToLocalStorage"
-      >
-        Save to Local Storage
-      </button>
-      <br />
-      <button
-        class="rounded text-sm px-2 py-1 text-red-700 border border-red-700 mt-2 hover:bg-red-100 cursor-pointer"
-        @click="removeLocalStorage"
-      >
-        Remove key from localStorage
-      </button>
-      <p v-if="isSaved" class="mt-3">
-        Try refreshing the page, the input should show the stored value from local storage.
-      </p>
-    </div>
+  <div class="text-center">
+    <input
+      v-model="textInput"
+      type="text"
+      placeholder="Type any string here"
+      class="border border-gray-300 rounded px-2 py-1 w-full md:w-80"
+    />
+    <button
+      class="mt-2 rounded border px-2 py-3 border-emerald-500 text-emerald-500 text-sm leading-1 cursor-pointer hover:text-emerald-700"
+      @click="saveToLocalStorage"
+    >
+      Save to Local Storage
+    </button>
+    <br />
+    <button
+      class="rounded text-sm px-2 py-1 text-red-700 border border-red-700 mt-2 hover:bg-red-100 cursor-pointer"
+      @click="removeLocalStorage"
+    >
+      Remove key from localStorage
+    </button>
+    <p v-if="isSaved" class="mt-3">
+      Try refreshing the page, the input should show the stored value from local storage.
+    </p>
   </div>
 </template>

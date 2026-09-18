@@ -19,23 +19,22 @@ onClickOutside(
 </script>
 
 <template>
-  <div class="border border-gray-200 p-4 rounded-lg flex flex-col items-center basis-xs">
-    <h3 class="border-b pb-1 mb-4">onClickOutside</h3>
-    <div class="text-center">
+  <div>
+    <div class="flex gap-4 flex-wrap justify-center mt-2">
       <button
         ref="target"
-        class="rounded bg-emerald-700 text-white px-4 py-2 cursor-pointer hover:bg-emerald-800"
+        class="rounded border px-2 py-3 border-emerald-500 text-emerald-500 text-sm leading-1 cursor-pointer hover:text-emerald-700"
         @click="onClick"
       >
         Click me
       </button>
       <button
         ref="ignoreTarget"
-        class="ml-2 rounded bg-gray-500 text-white px-4 py-2 cursor-pointer hover:bg-gray-600"
+        class="rounded border px-2 py-3 border-slate-500 text-slate-500 text-sm leading-1 cursor-pointer hover:text-slate-700"
       >
         I'm ignored
       </button>
-      <p class="mt-2">{{ textDisplay }}</p>
     </div>
+    <p class="mt-4 text-center">{{ textDisplay }}</p>
   </div>
 </template>

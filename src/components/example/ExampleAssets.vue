@@ -1,8 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="border border-gray-200 p-4 rounded-lg flex flex-col items-center basis-xs">
-    <h3 class="border-b pb-1 mb-4">Example Images</h3>
+  <div>
     <div>
       <p class="text-sm">Image from assets folder</p>
       <img

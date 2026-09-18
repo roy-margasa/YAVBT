@@ -50,7 +50,7 @@ So every time you forget how to use certain Vue features or libraries, you can g
 - [`useDebounceFn`](https://vueuse.org/shared/useDebounceFn/#usedebouncefn) - Debounce execution of a function for preventing repeat execution on repeat clicks
 - [`useEventListener`](https://vueuse.org/core/useEventListener/) - Automatically remove event listener on unmounted
 - [`useLocalStorage`](https://vueuse.org/core/useLocalStorage/#uselocalstorage) - Reactive localStorage
-- [`useMediaQuery`](https://vueuse.org/core/useMediaQuery/#usemediaquery) - Reactive media query
+- [`useBreakpoints`](https://vueuse.org/core/useBreakpoints/#usebreakpoints) - Reactive viewport breakpoints
 - [`useTimeoutFn`](https://vueuse.org/shared/useTimeoutFn/#usetimeoutfn) - Auto clean up timeout
 
 ## 📂 Project Structure
@@ -65,10 +65,9 @@ YAVBT/
 │   ├── components/                   # Reusable Vue components
 │   │   └── example/                  # Example components (remove this folder)
 │   ├── composables/                  # Reusable composition functions
-│   │   ├── example/                  # Example composable (remove this folder)
-│   │   └── useDefaultHead.ts         # Update the title value as needed
+│   │   └── example/                  # Example composable (remove this folder)
 │   ├── constants/                    # Application constants
-│   │   └── example/                   # Example for constant (remove this folder)
+│   │   └── example/                  # Example for constant (remove this folder)
 │   ├── plugins/                      # Vue plugin configuration
 │   │   ├── _shared/                  # Shared helpers for plugins
 │   │   ├── 1.router/                 # Vue Router configuration
@@ -76,26 +75,25 @@ YAVBT/
 │   │   ├── others/                   # Other plugin configurations
 │   │   ├── index.ts                  # Finds and registers plugins automatically
 │   │   └── README.md                 # Plugin folder documentation
-│   ├── router/                       # Vue Router configuration
-│   │   ├── example.ts                # Example route config (remove this)
-│   │   ├── index.ts                  # Main Vue Router logic
-│   │   └── routes.ts                 # Add the routings here
+│   ├── navigation                    # Vue Router configuration
+│   │   ├── example.ts                # Example route config (remove this)│   │   ├── index.ts                  # Main Vue Router logic
+│   │   └── routes.ts                 # Import the routing files here
 │   ├── stores/                       # Pinia state management
 │   │   └── example/                  # Example for how to write Pinia (remove this folder)
 │   ├── types/                        # TypeScript type definitions
-│   │   └── example/                   # Example for how to typing API response (remove this folder)
+│   │   └── example/                  # Example for how to typing API response (remove this folder)
 │   ├── utils/                        # Utility functions (auto-imported)
 │   │   └── ExtensionCheck.ts         # Example for utility (remove this if not necessary)
 │   ├── views/                        # Page components
 │   │   ├── BoilerplateExamples.vue   # (remove this)
 │   │   └── HelloWorld.vue            # (remove this)
 │   ├── App.vue                       # Root component
-│   ├── auto-imports.d.ts             # Auto-import type definitions
+│   ├── auto-imports.d.ts             # Auto-import type definitions (auto generated)
 │   └── main.ts                       # Application entry point
-├── public/                           # Public static assets
-│   └── ...
+├── public/
 ├── index.html                        # HTML entry point
-├── package.json                      # Project version and dependencies
+├── package.json
+├── CHANGELOG.md
 └── README.md                         # This file
 ```
 
@@ -168,17 +166,16 @@ Use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
 ## 📝 Todos
 
 - [x] add Vue Router beforeEach example
-- [ ] add layout example
+- [x] add layout example
 - [x] convert every function to arrow function
 - [ ] create a script to 'reset' this template
-- [ ] sfc example with defineModel
+- [x] sfc example with defineModel and provide / inject
 - [ ] test unit
 - [x] fix 404 when refreshed from boilerplate-example page
-- [ ] add link to the source on each example
+- [x] add link to the source on each example
 - [x] add Tanstack Query and example how to use it
 - [ ] add a mockup api instead of using availabe public api
 - [x] fix the mobile view
-- [ ] add responsive media query example using Tailwindcss
 - [x] create plugin folder for easier plugin management
 - [x] able to change head title
 - [x] add github.io page

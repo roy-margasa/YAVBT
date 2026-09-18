@@ -5,8 +5,7 @@ const quoteStore = useQuoteStore();
 </script>
 
 <template>
-  <div class="border border-gray-200 p-4 rounded-lg flex flex-col items-center basis-xs">
-    <h3 class="border-b pb-1 mb-4">Pinia</h3>
+  <div>
     <input
       v-model="quoteStore.quote"
       type="text"

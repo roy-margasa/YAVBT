@@ -44,9 +44,7 @@ const onSubmitComponent = (values: Record<string, unknown>) => {
 </script>
 
 <template>
-  <div class="border border-gray-200 p-4 rounded-lg flex flex-col items-center basis-xs">
-    <h3 class="border-b pb-1 mb-4">Vee Validate + yup</h3>
-
+  <div>
     <div class="w-full text-center">
       <p>Composables</p>
       <form @submit.prevent="onSubmitComposable">
@@ -64,7 +62,7 @@ const onSubmitComponent = (values: Record<string, unknown>) => {
         <button
           type="submit"
           :disabled="disableSubmitComposable"
-          class="mt-2 px-4 py-2 bg-blue-500 text-white rounded cursor-pointer hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed"
+          class="mt-2 rounded border px-2 py-3 border-emerald-500 text-emerald-500 text-sm leading-1 cursor-pointer enabled:hover:text-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Submit
         </button>
@@ -93,7 +91,7 @@ const onSubmitComponent = (values: Record<string, unknown>) => {
           <button
             type="submit"
             :disabled="Object.keys(errors).length > 0 || !values.email"
-            class="mt-2 px-4 py-2 bg-blue-500 text-white rounded cursor-pointer hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed"
+            class="mt-2 rounded border px-2 py-3 border-emerald-500 text-emerald-500 text-sm leading-1 cursor-pointer enabled:hover:text-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             Submit
           </button>

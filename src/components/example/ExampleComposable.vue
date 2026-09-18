@@ -5,8 +5,7 @@ const { rangeMin, rangeMax, colorRed, colorGreen, colorBlue, colorValue } = useC
 </script>
 
 <template>
-  <div class="border border-gray-200 p-4 rounded-lg flex flex-col items-center basis-xs">
-    <h3 class="border-b pb-1 mb-4">Composable</h3>
+  <div>
     <div class="w-2xs rounded p-4 relative" :style="{ 'background-color': colorValue.bg }">
       <p class="text-lg text-center font-bold" :style="{ color: colorValue.text }">rosebud</p>
     </div>

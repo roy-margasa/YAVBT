@@ -9,8 +9,7 @@ const formattedLocaleDate = useDateFormat(currentDate, 'dddd, DD MMMM YYYY', {
 </script>
 
 <template>
-  <div class="border border-gray-200 p-4 rounded-lg flex flex-col items-center basis-xs">
-    <h3 class="border-b pb-1 mb-4">useDateFormat + useNow</h3>
+  <div>
     <div class="text-center">
       <p class="text-sm">Current Date:</p>
       {{ currentDate }}

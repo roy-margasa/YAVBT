@@ -1,22 +1,11 @@
 <script setup lang="ts">
 // 📜 CODE BLOCK - init
-import { useHead } from '@unhead/vue';
 import SimpleProp from '@/components/example/SimpleProp.vue';
 import SimpleNamedSlot from '@/components/example/SimpleNamedSlot.vue';
 import { useQuoteStore } from '@/stores/example/quote';
 
 const quoteStore = useQuoteStore();
 const version = __APP_VERSION__;
-
-// 📜 CODE BLOCK - head content
-useHead({
-  meta: [
-    {
-      name: 'description',
-      content: "Yet Another Vue 3 Boilerplate Template!? It's a cheat sheet too!?"
-    }
-  ]
-});
 </script>
 
 <template>
@@ -28,7 +17,9 @@ useHead({
       {{ quoteStore.quote }}
       <template v-slot:subtitle>{{ quoteStore.author }}</template>
     </simple-named-slot>
-    <router-link to="/boilerplate-examples" class="mt-8 bg-gray-50 px-4 py-2 text-blue-500 rounded"
+    <router-link
+      to="/boilerplate-examples"
+      class="mt-8 bg-gray-50 px-4 py-2 text-blue-500 rounded hover:text-blue-700"
       >Boilerplate and Examples</router-link
     >
     <a
