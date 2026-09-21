@@ -55,7 +55,7 @@ So every time you forget how to use certain Vue features or libraries, you can g
 
 ## 📂 Project Structure
 
-```
+```plaintext
 YAVBT/
 ├── src/
 │   ├── assets/                       # Static assets
@@ -103,7 +103,7 @@ Use Feature-Based (Domain-Driven) for medium to large projects, example: `/src/f
 
 Example:
 
-```
+```plaintext
 src/
 ├── features/
 │   └── products/

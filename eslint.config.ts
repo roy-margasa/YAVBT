@@ -48,6 +48,9 @@ export default defineConfig([
         parser: '@typescript-eslint/parser',
         sourceType: 'module'
       }
+    },
+    rules: {
+      'no-undef': 'off'
     }
   },
   {

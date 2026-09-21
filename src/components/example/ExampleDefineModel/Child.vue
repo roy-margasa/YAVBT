@@ -29,7 +29,7 @@ const emit = defineEmits<{
       <p class="mb-1">Bar: {{ barCounter }}</p>
       <button
         class="rounded border px-2 py-3 border-emerald-500 text-emerald-500 text-sm leading-1 cursor-pointer hover:text-emerald-700"
-        @click="$emit('incrementBar')"
+        @click="emit('incrementBar')"
       >
         Increment from Parent (emit)
       </button>

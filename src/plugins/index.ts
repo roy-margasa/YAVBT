@@ -9,7 +9,7 @@ export const registerPlugins = (app: App) => {
 
   const modulePaths = Object.entries(modules).sort(([a], [b]) => a.localeCompare(b));
 
-  modulePaths.forEach(([_, pluginImportModule]) => {
+  modulePaths.forEach(([, pluginImportModule]) => {
     pluginImportModule.default?.(app);
   });
 };
