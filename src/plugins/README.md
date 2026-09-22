@@ -4,7 +4,7 @@ This folder is where I put the Vue plugins used by the app. The purpose is to ke
 
 ## 📂 Structure
 
-```
+```plaintext
 src/plugins/
 ├── index.ts                 # Finds and registers the plugins automatically
 ├── README.md                # This file
@@ -46,14 +46,14 @@ export default function (app: App) {
 
 If the plugin needs to be registered in a specific order, create a numbered folder:
 
-```
+```plaintext
 src/plugins/3.something/index.ts
 ```
 
 If the plugin does not need a numbered folder, put it directly inside
 `others/`:
 
-```
+```plaintext
 src/plugins/others/something.ts
 ```
 

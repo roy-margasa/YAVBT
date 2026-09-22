@@ -55,7 +55,7 @@ So every time you forget how to use certain Vue features or libraries, you can g
 
 ## 📂 Project Structure
 
-```
+```plaintext
 YAVBT/
 ├── src/
 │   ├── assets/                       # Static assets
@@ -76,7 +76,7 @@ YAVBT/
 │   │   ├── index.ts                  # Finds and registers plugins automatically
 │   │   └── README.md                 # Plugin folder documentation
 │   ├── navigation                    # Vue Router configuration
-│   │   ├── example.ts                # Example route config (remove this)│   │   ├── index.ts                  # Main Vue Router logic
+│   │   ├── example.ts                # Example route config (remove this)
 │   │   └── routes.ts                 # Import the routing files here
 │   ├── stores/                       # Pinia state management
 │   │   └── example/                  # Example for how to write Pinia (remove this folder)
@@ -94,7 +94,7 @@ YAVBT/
 ├── index.html                        # HTML entry point
 ├── package.json
 ├── CHANGELOG.md
-└── README.md                         # This file
+└── README.md
 ```
 
 ### Further Structure for Components Folder
@@ -103,7 +103,7 @@ Use Feature-Based (Domain-Driven) for medium to large projects, example: `/src/f
 
 Example:
 
-```
+```plaintext
 src/
 ├── features/
 │   └── products/
