@@ -2,6 +2,12 @@
 
 All notable changes to this project are documented in this file.
 
+## [unreleased]
+
+### ✨ Added
+
+- Add .editorconfig for consistent code editor styling
+
 ## [0.6.3] - 2026-09-22
 
 ### ⬆️ Updated
