@@ -20,7 +20,8 @@ export default defineConfig([
       'README.md',
       'package.json',
       'tsconfig.app.json',
-      'tsconfig.node.json'
+      'tsconfig.node.json',
+      'coverage/**'
     ]
   },
   {

@@ -5,7 +5,7 @@ export const utilMediaCheck = (filename: string | undefined) => {
     const filenameArray = filename.split('.');
     const lastElement = filenameArray[filenameArray.length - 1]?.toLowerCase();
 
-    return FILETYPE[lastElement as keyof typeof FILETYPE];
+    return FILETYPE[lastElement as keyof typeof FILETYPE] ?? null;
   }
 
   return null;
