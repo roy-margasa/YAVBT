@@ -10,6 +10,6 @@ describe('SimpleProp', () => {
       }
     });
 
-    expect(wrapper.find('h1').text()).toContain('Parappa The Rapper');
+    expect(wrapper.find('h1').text()).toBe('Parappa The Rapper');
   });
 });
