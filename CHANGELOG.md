@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add test for `utilMediaCheck()` inside `src/utils/ExtensionCheck.ts`
 - Add Vitest config file
 - Add test for SimpleProp component
+- Add test for SimpleNamedSlot component
 
 [Unreleased]: https://github.com/roy-margasa/YAVBT/compare/v0.6.3...HEAD
 
