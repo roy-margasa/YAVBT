@@ -11,6 +11,7 @@ const packageJson = JSON.parse(
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
+  // TODO: Need explanation for this loadEnv
   const env = loadEnv(mode, process.cwd(), '');
 
   return {
