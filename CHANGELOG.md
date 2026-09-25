@@ -14,7 +14,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add Vitest config file
 - Add test for SimpleProp component
 - Add test for SimpleNamedSlot component
-- Add test for ExampleASsets component
+- Add test for ExampleAssets component
+- Add test for ExampleComposable component
 
 [Unreleased]: https://github.com/roy-margasa/YAVBT/compare/v0.6.3...HEAD
 

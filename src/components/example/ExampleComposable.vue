@@ -6,7 +6,11 @@ const { rangeMin, rangeMax, colorRed, colorGreen, colorBlue, colorValue } = useC
 
 <template>
   <div>
-    <div class="w-2xs rounded p-4 relative" :style="{ 'background-color': colorValue.bg }">
+    <div
+      class="w-2xs rounded p-4 relative"
+      data-test="text-display"
+      :style="{ 'background-color': colorValue.bg }"
+    >
       <p class="text-lg text-center font-bold" :style="{ color: colorValue.text }">rosebud</p>
     </div>
     <div class="flex flex-col gap-2 mt-4">
