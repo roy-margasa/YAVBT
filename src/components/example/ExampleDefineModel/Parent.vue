@@ -17,7 +17,7 @@ provide(barCounterKey, parentBarCounter);
   <div>
     <Child
       v-model:foo-counter="parentFooCounter"
-      v-model:bar-counter="parentBarCounter"
+      :bar-counter="parentBarCounter"
       @increment-bar="incrementBar"
     />
   </div>

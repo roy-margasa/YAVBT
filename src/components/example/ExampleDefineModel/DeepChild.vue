@@ -9,6 +9,8 @@ const barCounter = inject(barCounterKey, ref(0));
 <template>
   <div class="rounded-lg p-2 border border-stone-300">
     <p class="mb-1 text-sm text-center">Deep Child</p>
-    <p class="mb-2 text-center">Foo: {{ fooCounter }} - Bar: {{ barCounter }}</p>
+    <p data-test="deep-child-value" class="mb-2 text-center">
+      Foo: {{ fooCounter }} - Bar: {{ barCounter }}
+    </p>
   </div>
 </template>
