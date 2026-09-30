@@ -7,11 +7,13 @@ const quoteStore = useQuoteStore();
 <template>
   <div class="text-center">
     <input
+      data-test="quote-input"
       v-model="quoteStore.quote"
       type="text"
       class="border border-gray-300 rounded px-2 py-1 w-80"
     />
     <input
+      data-test="author-input"
       v-model="quoteStore.author"
       type="text"
       class="border border-gray-300 rounded px-2 py-1 w-80 mt-2"
