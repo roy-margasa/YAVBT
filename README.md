@@ -165,33 +165,34 @@ Use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
 
 ## 📝 Todos
 
-- [x] add Vue Router beforeEach example
-- [x] add layout example
-- [x] convert every function to arrow function
-- [ ] create a script to 'reset' this template
-- [x] sfc example with defineModel and provide / inject
-- [ ] test unit
-- [x] fix 404 when refreshed from boilerplate-example page
-- [x] add link to the source on each example
-- [x] add Tanstack Query and example how to use it
 - [ ] add a mockup api instead of using availabe public api
-- [x] fix the mobile view
-- [x] create plugin folder for easier plugin management
+- [ ] add custom webfont
+- [ ] create a script to 'reset' this template
+- [ ] test unit
 - [x] able to change head title
 - [x] add github.io page
+- [x] add layout example
+- [x] add link to the source on each example
+- [x] add Tanstack Query and example how to use it
 - [x] add vee validate
+- [x] add Vue Router beforeEach example
 - [x] add vueuse localStorage example
 - [x] add vueuse onClickOutside example
 - [x] add vueuse useDateFormat example
 - [x] axios example
 - [x] composable example
+- [x] convert every function to arrow function
+- [x] create plugin folder for easier plugin management
 - [x] display image from assets and public folder
 - [x] example for typing
+- [x] fix 404 when refreshed from boilerplate-example page
+- [x] fix the mobile view
 - [x] have example for routing
 - [x] how to use this template
 - [x] JSDoc (where it needed)
 - [x] make utils available globally
 - [x] sfc example
+- [x] sfc example with defineModel and provide / inject
 - [x] state management example
 - [x] use @ for absolute path
 - [x] util example
