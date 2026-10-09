@@ -12,17 +12,17 @@ const formattedLocaleDate = useDateFormat(currentDate, 'dddd, DD MMMM YYYY', {
   <div>
     <div class="text-center">
       <p class="text-sm">Current Date:</p>
-      {{ currentDate }}
+      <span>{{ currentDate }}</span>
     </div>
 
     <div class="text-center mt-3">
       <p class="text-sm">Formatted Date:</p>
-      {{ formattedDate }}
+      <span>{{ formattedDate }}</span>
     </div>
 
     <div class="text-center mt-3">
       <p class="text-sm">Formatted Date (Deutsch):</p>
-      {{ formattedLocaleDate }}
+      <span>{{ formattedLocaleDate }}</span>
     </div>
   </div>
 </template>

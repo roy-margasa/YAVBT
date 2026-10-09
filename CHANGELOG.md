@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add test for `ExampleStateManagement`
 - Add test for `ExampleLayout`
 - Add test for `ExampleOnClickOutside`
+- Add test for `ExampleUseDateFormat`
 
 [Unreleased]: https://github.com/roy-margasa/YAVBT/compare/v0.6.3...HEAD
 
