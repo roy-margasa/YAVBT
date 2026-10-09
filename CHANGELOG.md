@@ -12,10 +12,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add .editorconfig for consistent code editor styling
 - Add test for `utilMediaCheck()` inside `src/utils/ExtensionCheck.ts`
 - Add Vitest config file
-- Add test for SimpleProp component
-- Add test for SimpleNamedSlot component
-- Add test for ExampleAssets component
-- Add test for ExampleComposable component
+- Add test for `SimpleProp` component
+- Add test for `SimpleNamedSlot` component
+- Add test for `ExampleAssets` component
+- Add test for `ExampleComposable` component
+- Add test for `ExampleDefineModel` component
+- Removed `defineModel` from `barCounter` in `src/components/example/ExampleDefineModel/Child.vue`, because it the `update` event is not being used
+- Center the elements on state management example
+- Add test for `ExampleStateManagement`
+- Add test for `ExampleLayout`
+- Add test for `ExampleOnClickOutside`
 
 [Unreleased]: https://github.com/roy-margasa/YAVBT/compare/v0.6.3...HEAD
 
