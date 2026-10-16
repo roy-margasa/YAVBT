@@ -13,9 +13,9 @@ describe('ExampleOnClickOutside', () => {
   it('change the message by clicking the target button', async () => {
     const wrapper = mount(ExampleOnClickOutside);
 
-    const buttons = wrapper.findAll('button');
+    const targetButton = wrapper.find('[data-test="targetButton"]');
 
-    await buttons[0].trigger('click');
+    await targetButton.trigger('click');
 
     expect(wrapper.find('p').text()).toBe('Button clicked!');
   });
@@ -53,9 +53,9 @@ describe('ExampleOnClickOutside', () => {
     // whether the ignore logic worked or the event just never arrived.
     const wrapper = mount(ExampleOnClickOutside, { attachTo: document.body });
 
-    const buttons = wrapper.findAll('button');
+    const ignoredTargetButton = wrapper.find('[data-test="ignoredTargetButton"]');
 
-    await buttons[1].trigger('click');
+    await ignoredTargetButton.trigger('click');
 
     expect(wrapper.find('p').text()).toBe('Waiting for click...');
   });
