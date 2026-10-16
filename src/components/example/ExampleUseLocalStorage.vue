@@ -15,7 +15,6 @@ const removeLocalStorage = () => {
   localStorage.removeItem('exampleTextInput');
   // Clear the useLocalStorage ref
   // If not cleared, the old value will still be there
-  storedValue.value = '';
   textInput.value = '';
   isSaved.value = false;
 };
@@ -36,6 +35,7 @@ onMounted(() => {
       class="border border-gray-300 rounded px-2 py-1 w-full md:w-80"
     />
     <button
+      data-test="saveToLocalStorageButton"
       class="mt-2 rounded border px-2 py-3 border-emerald-500 text-emerald-500 text-sm leading-1 cursor-pointer hover:text-emerald-700"
       @click="saveToLocalStorage"
     >
@@ -43,6 +43,7 @@ onMounted(() => {
     </button>
     <br />
     <button
+      data-test="removeLocalStorageButton"
       class="rounded text-sm px-2 py-1 text-red-700 border border-red-700 mt-2 hover:bg-red-100 cursor-pointer"
       @click="removeLocalStorage"
     >
