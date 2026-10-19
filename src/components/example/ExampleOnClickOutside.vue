@@ -22,7 +22,7 @@ onClickOutside(
   <div>
     <div class="flex gap-4 flex-wrap justify-center mt-2">
       <button
-        data-test="targetButton"
+        data-test="target-button"
         ref="target"
         class="rounded border px-2 py-3 border-emerald-500 text-emerald-500 text-sm leading-1 cursor-pointer hover:text-emerald-700"
         @click="onClick"
@@ -30,7 +30,7 @@ onClickOutside(
         Click me
       </button>
       <button
-        data-test="ignoredTargetButton"
+        data-test="ignored-target-button"
         ref="ignoreTarget"
         class="rounded border px-2 py-3 border-slate-500 text-slate-500 text-sm leading-1 cursor-pointer hover:text-slate-700"
       >

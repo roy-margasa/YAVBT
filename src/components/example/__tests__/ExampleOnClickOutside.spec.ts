@@ -13,7 +13,7 @@ describe('ExampleOnClickOutside', () => {
   it('change the message by clicking the target button', async () => {
     const wrapper = mount(ExampleOnClickOutside);
 
-    const targetButton = wrapper.find('[data-test="targetButton"]');
+    const targetButton = wrapper.find('[data-test="target-button"]');
 
     await targetButton.trigger('click');
 
@@ -53,7 +53,7 @@ describe('ExampleOnClickOutside', () => {
     // whether the ignore logic worked or the event just never arrived.
     const wrapper = mount(ExampleOnClickOutside, { attachTo: document.body });
 
-    const ignoredTargetButton = wrapper.find('[data-test="ignoredTargetButton"]');
+    const ignoredTargetButton = wrapper.find('[data-test="ignored-target-button"]');
 
     await ignoredTargetButton.trigger('click');
 
