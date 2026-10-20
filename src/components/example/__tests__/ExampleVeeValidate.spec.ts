@@ -37,9 +37,7 @@ describe('ExampleVeeValidate', () => {
   it('show required error message on composable one', async () => {
     const wrapper = mount(ExampleVeeValidate);
 
-    const composableSubmitButton = wrapper.find('[data-test="composable-submit-button"]');
-
-    await composableSubmitButton.trigger('submit');
+    await wrapper.find('[data-test="composable-form"]').trigger('submit');
 
     await vi.waitFor(() => {
       expect(wrapper.find('[data-test="composable-error-message"]').exists()).toBe(true);
@@ -53,9 +51,7 @@ describe('ExampleVeeValidate', () => {
   it('show required error message on component one', async () => {
     const wrapper = mount(ExampleVeeValidate);
 
-    const componentSubmitButton = wrapper.find('[data-test="component-submit-button"]');
-
-    await componentSubmitButton.trigger('submit');
+    await wrapper.find('[data-test="component-form"]').trigger('submit');
 
     await vi.waitFor(() => {
       expect(wrapper.find('[data-test="component-error-message"]').exists()).toBe(true);

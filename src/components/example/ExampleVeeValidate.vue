@@ -57,7 +57,6 @@ const onSubmitComponent = (values: Record<string, unknown>) => {
             placeholder="Insert email"
           />
           <button
-            data-test="composable-submit-button"
             type="submit"
             class="rounded border px-2 py-3 border-emerald-500 text-emerald-500 text-sm leading-1 cursor-pointer enabled:hover:text-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed"
           >
@@ -100,7 +99,6 @@ const onSubmitComponent = (values: Record<string, unknown>) => {
               placeholder="Insert email"
             />
             <button
-              data-test="component-submit-button"
               type="submit"
               class="rounded border px-2 py-3 border-emerald-500 text-emerald-500 text-sm leading-1 cursor-pointer enabled:hover:text-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed"
             >
