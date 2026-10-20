@@ -86,7 +86,7 @@ const onSubmitComponent = (values: Record<string, unknown>) => {
       </div>
       <!-- VeeValidate's Form handles the native submit event and emits validated values, so use @submit without .prevent. -->
       <Form data-test="component-form" @submit="onSubmitComponent" :validation-schema="typedSchema">
-        <template #default="{ values, errors }">
+        <template #default="{ errors }">
           <div class="flex gap-2">
             <Field
               data-test="component-input"

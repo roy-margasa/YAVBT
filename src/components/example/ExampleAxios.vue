@@ -35,7 +35,7 @@ const renderingIsDone = () => {
 
 <template>
   <div class="w-full flex flex-col items-center">
-    <div v-if="isLoadingMedia" class="w-full animate-pulse">
+    <div v-if="isLoadingMedia" data-test="loading-skeleton" class="w-full animate-pulse">
       <div class="w-full block h-30 bg-gray-300"></div>
     </div>
     <img
@@ -55,9 +55,9 @@ const renderingIsDone = () => {
       class="h-40"
       autoplay
     />
-    <p v-if="isErrorFetchWoof" class="text-xs mt-1 text-red-500">
+    <p v-if="isErrorFetchWoof" data-test="error-message" class="text-xs mt-1 text-red-500">
       {{ errorWoof?.message }}
     </p>
-    <p v-if="mediaType" class="text-xs mt-1">type: {{ mediaType }}</p>
+    <p v-if="mediaType" data-test="media-type-text" class="text-xs mt-1">type: {{ mediaType }}</p>
   </div>
 </template>
