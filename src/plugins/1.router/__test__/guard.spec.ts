@@ -8,6 +8,10 @@ describe('plugins 1.router - setupGuards', () => {
   it('use value from to.meta.title', () => {
     let capturedCallback!: (to: RouteLocationNormalized) => void;
 
+    // RESEARCH
+    // This one is still... kinda mystery for me
+    // I checked the Router type but I can't found the beforeEach
+    // I need to inspect this again
     const fakeRouter = {
       beforeEach: (cb: (to: RouteLocationNormalized) => void) => {
         capturedCallback = cb;

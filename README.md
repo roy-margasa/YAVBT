@@ -169,6 +169,7 @@ Use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
 - [ ] add custom webfont
 - [ ] create a script to 'reset' this template
 - [ ] test unit
+- [ ] add css custom properties for light and dark mode
 - [x] able to change head title
 - [x] add github.io page
 - [x] add layout example
