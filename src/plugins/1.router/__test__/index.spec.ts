@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import plugin, { router } from '../index.ts';
+import VueRouterPlugin, { router } from '../index.ts';
 import routes from '@/navigation/routes.ts';
 import type { RouteLocationNormalized } from 'vue-router';
 
@@ -13,7 +13,7 @@ describe('plugins 1.router - index', () => {
       }
     };
 
-    plugin(fakeApp as any);
+    VueRouterPlugin(fakeApp as any);
 
     expect(received).toBe(router);
   });

@@ -29,6 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add test for `ExampleAxios`
 - Add test for `src/plugins/1.router/guards.ts`
 - Add test for `src/plugins/1.router/index.ts`
+- Add test for `src/plugins/1.pinia/index.ts`
 
 [Unreleased]: https://github.com/roy-margasa/YAVBT/compare/v0.6.3...HEAD
 
